@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,700;1,700&family=Noto+Sans+Pau+Cin+Hau&display=swap');
+
+html{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgb(126, 43, 204) 0%, rgba(45, 20, 207, 0.829) 100%);  
+    font-family: 'Noto Sans Pau Cin Hau', sans-serif; 
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.prueba{
+    font-family: 'Kanit', sans-serif;
+    text-shadow: 5px 5px 5px rgba(78, 78, 78, 0.671);
+}
+
+.resultados::-webkit-scrollbar{
+    width: 3px;
+}
+.resultados{
+    animation: myAnim 0.3s ease 0s 1 normal forwards;
+}
+
+.resultados::-webkit-scrollbar-thumb{
+    width: 3px;
+    background: rgb(234 179 8 / var(--tw-bg-opacity));;
+}
+
+h1{
+    font-family: 'Kanit', sans-serif;
+}
+
+
+@keyframes myAnim {
+	0% {
+		transform: scaleY(0);
+		transform-origin: 100% 0%;
+	}
+
+	100% {
+		transform: scaleY(1);
+		transform-origin: 100% 0%;
+	}
+}
