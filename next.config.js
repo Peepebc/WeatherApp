@@ -4,9 +4,9 @@ module.exports = () => {
     const rewrites = () => {
       return [
         {
-          source: "/api/**",
-          destination: "http://api.openweathermap.org/**",
-        },
+            source: '/api/:path*',
+            destination: 'http://api.openweathermap.org/:path*' // Proxy to Backend
+        }
       ];
     };
     return {
