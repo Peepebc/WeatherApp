@@ -13,7 +13,7 @@ export default function Home() {
   
   const handleSubmit = (evt) =>{
     evt.preventDefault()
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${location},&limit=7&lang=sp&appid=1d1949da09e9b7a31fb512e62e1779b6`)
+    fetch(`api/geo/1.0/direct?q=${location},&limit=7&lang=sp&appid=1d1949da09e9b7a31fb512e62e1779b6`)
     .then(response => response.json())
     .then(result => {
       setResultados(result)
